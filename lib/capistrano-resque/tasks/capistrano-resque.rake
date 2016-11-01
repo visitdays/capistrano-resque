@@ -9,6 +9,7 @@ namespace :load do
     set :resque_verbose, true
     set :resque_pid_path, -> { File.join(shared_path, 'tmp', 'pids') }
     set :resque_dynamic_schedule, false
+    set :resque_nohup, true
   end
 end
 

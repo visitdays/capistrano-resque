@@ -15,7 +15,7 @@ module CapistranoResque
         _cset(:resque_verbose, true)
         _cset(:resque_pid_path) { File.join(shared_path, 'tmp', 'pids') }
         _cset(:resque_dynamic_schedule, false)
-        _cset(:resque_nohup, false)
+        _cset(:resque_nohup, true)
 
         def rails_env
           fetch(:resque_rails_env, fetch(:rails_env, "production"))
